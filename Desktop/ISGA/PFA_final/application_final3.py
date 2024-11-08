@@ -43,7 +43,7 @@ class App(ctk.CTk):
     def create_ui(self):
         # Chargement et affichage du logo
         try:
-            self.logo_image = Image.open("ISGA.png").resize((240, 150))
+            self.logo_image = Image.open("logo-webimakers.png").resize((240, 150))
             self.logo_image_tk = ImageTk.PhotoImage(self.logo_image)
             self.logo_image_label = tk.Label(self, image=self.logo_image_tk, bg='#ccffcc')
             self.logo_image_label.image = self.logo_image_tk  # reference img tkinter
